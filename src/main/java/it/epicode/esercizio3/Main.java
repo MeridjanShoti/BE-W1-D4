@@ -15,5 +15,6 @@ public class Main {
         for (Collaboratore collaboratore : collaboratori) {
             collaboratore.checkIn();
         }
+
     }
 }

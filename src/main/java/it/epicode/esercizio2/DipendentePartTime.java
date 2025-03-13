@@ -1,6 +1,8 @@
 package it.epicode.esercizio2;
 
-public class DipendentePartTime extends Dipendente{
+import it.epicode.esercizio3.Collaboratore;
+
+public class DipendentePartTime extends Dipendente implements Collaboratore {
     int oreLavorate;
 
 
@@ -19,5 +21,9 @@ public class DipendentePartTime extends Dipendente{
             return stipendioNetto;
     }
 
+    @Override
+    public void checkIn() {
+        System.out.println("Check in part time: " + this.getMatricola());
+    }
 }
 
